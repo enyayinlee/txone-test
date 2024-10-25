@@ -1,0 +1,68 @@
+{
+  "devDependencies": {
+    "@babel/core": "^7.25.9",
+    "@babel/preset-env": "^7.25.9",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.25.9",
+    "@eslint/js": "^9.13.0",
+    "@playwright/test": "^1.48.1",
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/react": "^16.0.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.8.0",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.1",
+    "babel-jest": "^29.7.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.1",
+    "gh-pages": "^6.2.0",
+    "globals": "^15.11.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "mini-css-extract-plugin": "^2.9.1",
+    "playwright": "^1.48.1",
+    "prettier": "^3.3.3",
+    "react-test-renderer": "^18.3.1",
+    "sass-loader": "^16.0.2",
+    "source-map-loader": "^5.0.0",
+    "ts-jest": "^29.2.5",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.11.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@tonic-ui/react": "^2.3.0",
+    "@tonic-ui/react-icons": "^2.1.0",
+    "classnames": "^2.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.80.3"
+  },
+  "name": "txone-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --maxWorkers=2 --silent=false",
+    "build": "webpack build",
+    "prettier": "prettier . --write",
+    "watch": "webpack --watch --mode development"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx)"
+    ]
+  }
+}
